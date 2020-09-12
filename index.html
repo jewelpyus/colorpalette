@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Color Me</title>
+    <title>Color Me Softly</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&display=swap"
       rel="stylesheet"
@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="color-palette">
-      <div class="color-indiv">
+    <div class="colors">
+      <div class="color">
         <h2>Hex</h2>
         <div class="controls">
           <button class="adjust"><i class="fas fa-sliders-h"></i></button>
@@ -47,12 +47,12 @@
             max="1"
             step="0.01"
             name="saturation"
-            class="saturation-input"
-            data-saturation="0"
+            class="sat-input"
+            data-sat="0"
           />
         </div>
       </div>
-      <div class="color-indiv">
+      <div class="color">
         <h2>Hex</h2>
         <div class="controls">
           <button class="adjust"><i class="fas fa-sliders-h"></i></button>
@@ -87,12 +87,12 @@
             max="1"
             step="0.01"
             name="saturation"
-            class="saturation-input"
-            data-saturation="1"
+            class="sat-input"
+            data-sat="1"
           />
         </div>
       </div>
-      <div class="color-indiv">
+      <div class="color">
         <h2>Hex</h2>
         <div class="controls">
           <button class="adjust"><i class="fas fa-sliders-h"></i></button>
@@ -127,12 +127,12 @@
             max="1"
             step="0.01"
             name="saturation"
-            class="saturation-input"
-            data-saturation="2"
+            class="sat-input"
+            data-sat="2"
           />
         </div>
       </div>
-      <div class="color-indiv">
+      <div class="color">
         <h2>Hex</h2>
         <div class="controls">
           <button class="adjust"><i class="fas fa-sliders-h"></i></button>
@@ -167,12 +167,12 @@
             max="1"
             step="0.01"
             name="saturation"
-            class="saturation-input"
-            data-saturation="3"
+            class="sat-input"
+            data-sat="3"
           />
         </div>
       </div>
-      <div class="color-indiv">
+      <div class="color">
         <h2>Hex</h2>
         <div class="controls">
           <button class="adjust"><i class="fas fa-sliders-h"></i></button>
@@ -207,8 +207,8 @@
             max="1"
             step="0.01"
             name="saturation"
-            class="saturation-input"
-            data-saturation="4"
+            class="sat-input"
+            data-sat="4"
           />
         </div>
       </div>
@@ -227,10 +227,16 @@
         <p>Save</p>
       </div>
     </div>
+    <div class="copy-container">
+      <div class="copy-popup">
+        <h3>Copied to clipboard!</h3>
+        <h4>&#128077;</h4>
+      </div>
+    </div>
     <div class="save-container">
       <div class="save-popup">
         <button class="close-save">X</button>
-        <h4>Give a palette name!</h4>
+        <h4>Give a name to your pallete</h4>
         <input type="text" max-length="35" class="save-name" />
         <button type="submit" class="submit-save">Save</button>
       </div>
@@ -242,8 +248,8 @@
       </div>
     </div>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
-      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
       crossorigin="anonymous"
     ></script>
     <script
